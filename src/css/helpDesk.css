@@ -166,20 +166,19 @@ html, body {
   border-bottom-right-radius: 5px;
 }
 
-.h-100
-height: 100% !important
 
-.card-img-top
+.card-img-top{
 width: 100%;
 border-top-left-radius: calc(.25rem - 1px);
 border-top-right-radius: calc(.25rem - 1px);
-
+}
 
 /*==========================================*/
 /*   Base Starts
 /*==========================================*/
 
-@charset "utf-8";
+
+
 body.helpcenter-enable {
     height: 100%;
   /* 폰트 수정용 */
