@@ -408,3 +408,152 @@ li {
     white-space: nowrap;
     overflow: hidden;
 }
+
+.laborDetail {
+    width: 60%
+}
+
+.laborDetail_contentWrapper {
+    width: 70%;
+}
+
+.laborDetail_relativeWrapper {
+    position: relative;
+}
+
+.JobImage_JobImage {
+    position: relative;
+    overflow: hidden;
+}
+
+.JobImage_JobImage_arrow_left {
+    left: 0;
+    position: absolute;
+    width: 9%;
+    height: 100%;
+    font-size: 26px;
+    color: #b5b5b5;
+    opacity: .7;
+    z-index: 1;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+}
+
+.JobImage_JobImage_arrow_left i {
+    display: block;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow_down:before {
+    content: "\e947";
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.JobImage_JobImage_arrow__right {
+    right: 0;
+    position: absolute;
+    width: 9%;
+    height: 100%;
+    font-size: 26px;
+    color: #b5b5b5;
+    opacity: .7;
+    z-index: 1;
+
+}
+
+.JobImage_JobImage_slides {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-bottom: 4px;
+    height: auto;
+    overflow-x: auto;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+    -ms-scroll-chaining: none;
+    overscroll-behavior: contain;
+}
+
+.JobImage_JobImage_slide {
+    scroll-snap-align: start;
+    position: relative;
+    width: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-bottom: 70%;
+}
+
+.Main_Main__XvIqW {
+    width: 100%;
+}
+
+.JobHeader_className{
+    margin: 40px 0 30px;
+}
+
+.JobHeader_className>h2 {
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+
+.JobHeader_className>div>h6 {
+    color: #999;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.JobHeader_className>div>h6>a {
+    color: #333;
+    position: relative;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    line-height: 1.4;
+}
+
+.JobDescription_JobDescription {
+    margin: 40px 0;
+}
+
+.JobDescription_JobDescription p {
+    color: red;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    
+}
