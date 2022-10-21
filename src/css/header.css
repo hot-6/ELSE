@@ -11,6 +11,10 @@ element.style {
   position: fixed;
   padding-right: initial;
 }
+.Aside_className___e5Bi > ul {
+  height: 100%;
+  margin: 0;
+}
 .NavBar_className__y2qGg {
   width: 100%;
   position: fixed;
@@ -35,6 +39,15 @@ element.style {
   position: relative;
   max-width: 1060px;
   height: 50px;
+}
+.NavBar_className__y2qGg {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  z-index: 800;
 }
 .MainBar_MainBar_nav__kwHBF, .MainBar_MainBar_nav_top__wXy52 {
   display: -ms-flexbox;
@@ -313,4 +326,12 @@ ul {
 body {
   background-color: #f8f8f8;
   font-family: Pretendard,Pretendard JP,Pretendard Std,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: inherit;
+  cursor: pointer;
 }
