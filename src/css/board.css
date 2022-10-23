@@ -1,8 +1,10 @@
-/* @media (min-width: 1200px)
-.Shortcut_noticeboard {
+@media (min-width: 1200px){
+.board_exchange_labor {
     margin: 0 auto;
-    padding: 60px 0 85px;
-} */
+    padding: 70px 0 50px;
+    width: 87.72%;
+}
+}
 
 .board_body{
     margin: 0 auto;
