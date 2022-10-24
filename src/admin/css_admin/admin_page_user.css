@@ -20,7 +20,7 @@
 .user_list {
     margin-top: 20px;
     width: 100%;
-    height: 800px;
+    max-height: 800px;
     background-color: white;
     /* border: 1px solid red; */
 }
@@ -41,7 +41,6 @@
 
 .user_info_wrapper {
     /* border: 1px solid salmon; */
-    height: 50px;
     padding-left: 50px;
     position: relative;
 }
@@ -58,14 +57,17 @@
 }
 
 input[id="total_check"] {
-    position: relative;
-    width: 24px;
-    height: 24px;
+    /* position: relative; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
 }
 
 .user_info_title{
     padding-top: 9px;
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 20px;
     width: 120px;
 }
@@ -73,7 +75,7 @@ input[id="total_check"] {
 
 .user_info_top_div {
     width: 100%;
-    height: 50px;
+    height: 40px;
 }
 
 .user_list_info {
@@ -82,21 +84,25 @@ input[id="total_check"] {
     max-height: 700px;
 }
 
+.user_info_wrapper :last-child {
+    padding-bottom: 8px;
+}
+
 .user_list_box {
     position: relative;
 }
 
 .one_check {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     position: absolute;
-    top: 27px;
-    left: -14px;
+    top: 28px;
+    left: -10px;
 }
 
 .user_content {
     width: 100%;
-    height: 60px;
+    height: 50px;
     /* border: 1px solid skyblue; */
 }
 
@@ -107,19 +113,19 @@ input[id="total_check"] {
 /* search======================================================================== */
 .user_search {
     position: relative;
+    height: 60px;
 }
 
 .user_search > div {
     margin-left: 150px;
-    margin-top: 12px;
 }
 
 .user_search  img {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     position: absolute;
-    top: 12px;
-    left: 75px;
+    top: 18px;
+    left: 105px;
 }
 
 .search_text {
@@ -127,7 +133,7 @@ input[id="total_check"] {
     background-color: white;
     border: none;
     width: 80%;
-    height: 50px;
+    height: 30px;
     padding-left: 20px;
     margin-top: 16px;
 }
@@ -149,5 +155,5 @@ input[id="total_check"] {
 }
 
 .title_bold {
-    font-weight: bold;
+    font-weight: 700;
 }

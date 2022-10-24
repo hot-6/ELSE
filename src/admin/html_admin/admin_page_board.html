@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/admin/css_admin/admin_page_board.css">
+    <link rel="stylesheet" href="/src/src/admin/css_admin/admin_page_board.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="/admin/css_admin/admin_page_same.css">
+    <link rel="stylesheet" href="/src/src/admin/css_admin/admin_page_same.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -23,14 +26,15 @@
             <div class="content">
                 <div class="content_wrapper">
                     <div class="user_search">
-                        <a href="javascript:void(0)"><img src="/admin/img_admin/search.png"></a>
+                        <a href="javascript:void(0)"><img src="/src/src/admin/img_admin/search (2).png"></a>
                         <div>
                             <input class="search_text" type="text" placeholder="검색">
                         </div>
                     </div>
                     <div class="user_list">
-                        <div class="total_user">품앗이 게시글</div>
-                        <input class="btn_delete" type="button" value="삭제">
+                        <div class="total_user">품앗이 게시글
+                            <input class="btn_delete" type="button" value="삭제">
+                        </div>
                         <div class="user_info_wrapper">
                             <div class="user_info_top_div">
                                 <ul class="user_info">
@@ -45,11 +49,17 @@
                                     <li class="user_info_title content_text_align title_bold">
                                         <span>작성자</span>
                                     </li>
+                                    <li class="user_info_title content_text_align title_bold">
+                                        <span>작성일</span>
+                                    </li>
                                     <li class="user_info_title board_title title_bold">
                                         <span>제목</span>
                                     </li>
                                     <li class="user_info_title content_text_align title_bold">
                                         <span>신뢰 점수</span>
+                                    </li>
+                                    <li class="user_info_title content_text_align title_bold">
+                                        <span>스크랩 수</span>
                                     </li>
                                     
                                 </ul>
@@ -68,7 +78,13 @@
                                         <li class="user_info_title user_one_info content_text_align">
                                             <span>정보</span>
                                         </li>
+                                        <li class="user_info_title user_one_info content_text_align">
+                                            <span>정보</span>
+                                        </li>
                                         <li class="user_info_title user_one_info board_title">
+                                            <span>정보</span>
+                                        </li>
+                                        <li class="user_info_title user_one_info content_text_align">
                                             <span>정보</span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
@@ -91,7 +107,13 @@
                                         <li class="user_info_title user_one_info content_text_align">
                                             <span>정보</span>
                                         </li>
+                                        <li class="user_info_title user_one_info content_text_align">
+                                            <span>정보</span>
+                                        </li>
                                         <li class="user_info_title user_one_info board_title">
+                                            <span>정보</span>
+                                        </li>
+                                        <li class="user_info_title user_one_info content_text_align">
                                             <span>정보</span>
                                         </li>
                                         <li class="user_info_title user_one_info content_text_align">
@@ -111,10 +133,10 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="" alt="로고 이미지"></a></div>
+            <div class="logo_img"><a href="/src/src/admin/html_admin/admin_page_main.html"><img src="">ELSE</a></div>
             <div class="menu_admin">
                 <div><a href="#">
-                    <img src="/admin/img_admin/home.png">
+                    <img src="/src/src/admin/img_admin/home.png">
                     <div>사이트 바로가기</div>
                 </a></div>
             </div>
@@ -122,21 +144,21 @@
                 <ul class="manage_list">
                     <li class="list_li">
                         <a href="admin_page_request.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/browser.png"></div>
+                            <div><img class="manage_list_img" src="/src/src/admin/img_admin/browser.png"></div>
                             <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/user.png"></div>
+                            <div><img class="manage_list_img" src="/src/src/admin/img_admin/user.png"></div>
                             <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
-                                <div><img class="manage_list_img" src="/admin/img_admin/ballot.png"></div>
+                                <div><img class="manage_list_img" src="/src/src/admin/img_admin/ballot.png"></div>
                                 <span>게시글 관리</span>
-                                <img class="arrow_down" src="/admin/img_admin/angle-down1.png">
+                                <img class="arrow_down" src="/src/src/admin/img_admin/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
                                         <div>품앗이 게시판</div>
@@ -152,19 +174,19 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="manage_list_img" src="/admin/img_admin/list-check.png"></div>
-                            <span>댓글 관리</span>
+                            <div><img class="statis_list_img" src="/src/src/admin/img_admin/statistic.png"></div>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
-                        <a href="/admin/html_admin/admin_page_service.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/comments.png"></div>
+                        <a href="/src/src/admin/html_admin/admin_page_service.html">
+                            <div><img class="manage_list_img" src="/src/src/admin/img_admin/comments.png"></div>
                             <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
-                            <div><img class="manage_list_img" src="/admin/img_admin/exclamation.png"></div>
+                            <div><img class="manage_list_img" src="/src/src/admin/img_admin/exclamation.png"></div>
                             <span>관리자 공지</span>
                         </a>
                     </li>
@@ -173,5 +195,5 @@
         </div>
     </div>
 </body>
-<script src="/admin/js_admin/admin_page_main.js"></script>
+<script src="/src/src/admin/js_admin/admin_page_main.js"></script>
 </html>
