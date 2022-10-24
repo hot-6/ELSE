@@ -1,15 +1,49 @@
+@media (min-width: 1200px){
+.particiPation_className {
+    display: inline-block;
+    width: calc(100% - 360px);
+    vertical-align: top;
+}
+}
+@media (min-width: 1200px){
+.partHeader_locationContainer {
+    display: inline-block;
+}
+}
+
+@media (min-width: 1200px){
+.JobDescription_JobDescription {
+    margin-bottom: 60px;
+    padding-right: 20px;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+partWorkPlace_classname {
+    margin-top: 20px;
+}
+}
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
     border: 0;
 }
-
+body{
+    background-color: white;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 .particiPationDetail {
     background-color: white;
 }
 
 .particiPationDetail_contentWrapper{
     margin-left: 350px;
+    margin-top: 100px;
 }
 
 .particiPationDetail_relativeWrapper{
@@ -21,21 +55,20 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     scroll-snap-align: start;
     position: relative;
     width: 100%;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
-    
-
-
+    padding-bottom: 70%;
     
 }
 .Jobmage_JobImage{
-    padding: auto;
-    height: 500px;
+    position: relative;
+    overflow: hidden;
 }
 
 .JobImage_JobImage_slide>img{
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     left: 0;
     top: 0;
     border-radius: 4px;
@@ -43,21 +76,23 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     object-fit: cover;
     outline: 1px solid rgba(0,0,0,.05);
     outline-offset: -1px;
-    margin-top: 100px;
 }
-.JobHeader_className{
+.partHeader_className{
     margin: 40px 0 30px;
 }
-.particiPation_className{
+@media (min-width: 1200px){
+
+.particiPation_className {
     display: inline-block;
     width: calc(100% - 360px);
     vertical-align: top;
+}
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-.JobHeader_className>h2 {
+.partHeader_className>h2 {
     color: #333;
     font-size: 22px;
     font-weight: 600;
@@ -66,7 +101,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     word-wrap: break-word;
 }
 
-.JobHeader_className>div>h6 {
+.partHeader_className>div>h6 {
     color: #999;
     font-size: 14px;
     font-weight: 600;
@@ -85,13 +120,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 }
 
-.JobHeader_locationContainer{
+.partHeader_locationContainer{
     position: relative;
     white-space: nowrap;
     margin-top: 40px;
     color: #999;
 }
-.JobHeader_locationContainer:before {
+.partHeader_locationContainer:before {
     content: "";
     display: block;
     width: 1px;
@@ -102,10 +137,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     left: 0;
 }
 
-.JobHeader_locationContainer:after {
+.partHeader_locationContainer:after {
     display: block;
     content: "";
     clear: both;
+}
+
+.particiPation_className{
+    width: 50%;
 }
 
 .Process_container{
@@ -113,13 +152,40 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     position: fixed;
     right: calc((100% - 1060px)/2);
 }
+.JobDescription_JobDescription {
+    margin: 40px 0;
+}
 
+.JobDescription_JobDescription p {
+    color: #333;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.partContent_divider{
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.JobDescription_JobDescription h6, .JobDescription_JobDescription p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.JobDescription_JobDescription h6 {
+    margin: 20px 0 0;
+    font-weight: 600;
+}
 .Before_container>header{
-    width: 340px;
+    width: 400px;
     border: 1px solid #e1e2e3;
     background-color: #fff;
     padding: 24px 20px;
     border-radius: 3px;
+    margin-top: 30px;
 }
 
 .total_container>h3 {
@@ -140,6 +206,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     width: 50%;
     letter-spacing: normal;
     text-align: left;
+}
+ol, ul {
+    list-style: none;
 }
 
 .total_container>ul>li>h4{
@@ -214,3 +283,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     margin-top: 10px;
 }
+
+.partWorkPlace_classname{
+    margin-top: 40px 0px;
+}
+
+.partWorkPlace_classname>div{
+    margin-bottom: 20px;
+}
+
+.partWorkPlace_classname .header{
+    color: rgb(153, 153, 153);
+    width: 80px;
+}
+
+.partWorkPlace_classname .body, .partWorkPlace_classname .header {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    vertical-align: text-top;
+}
+.partWorkPlace_classname .body {
+    color: rgb(51, 51, 51);
+    width: calc(100% - 80px);
+}
+
+.NaverMap_NaverMap > img {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: 50% center;
+}
+
+.NaverMap_NaverMap {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.Process_container{
+    bottom: 0px;
+    position: absolute;
+    right: 00px;
+    margin-left: 70px;
+}
+
+@media (min-width: 1200px){
+.Process_container {
+    width: 340px;
+    position: fixed;
+    right: calc((100% - 1260px)/2);
+}
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+@media (min-width: 1200px){
+.Process_container>header {
+    width: 340px;
+    border: 1px solid #e1e2e3;
+    background-color: #fff;
+    padding: 24px 20px;
+}
+}
+
+.Process_container>header{
+    border-radius: 3px;
+}
+
