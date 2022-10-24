@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_admin_notice.css">
+    <link rel="stylesheet" href="/src/src/admin/css_admin/admin_page_statis.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-    <title></title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>   
+<title></title>
 </head>
 <body>
     <div id="base">
         <div class="main">
             <header class="top_header">
                 <div class="headerbar">
-                    <div class="admin_name">관리자 공지</div>
+                    <div class="admin_name">통계</div>
                     <div class="exit_button_div">
                         <button class="exit_button">나가기</button>
                     </div>
@@ -25,77 +26,70 @@
             </header>
             <div class="content">
                 <div class="content_wrapper">
-                    <div class="user_list">
-                        <div class="total_user">공지 사항
-                            <input class="btn_write" type="button" value="글작성">
+                    <div>
+                        <div class="visit_statis">
+                            <div class="visit_title">
+                                일자별 방문자 통계
+                            </div>
                         </div>
-                        <div class="user_info_wrapper">
-                            <div class="user_info_top_div">
-                                <ul class="notice_info">
-                                    <li class="notice_number user_info_title content_text_align title_bold">
-                                        <span>번호</span>
-                                    </li>
-                                    <li class="notice_title user_info_title content_text_align title_bold">
-                                        <span>제목</span>
-                                    </li>
-                                    <li class="notice_writer user_info_title board_title title_bold">
-                                        <span>작성자</span>
-                                    </li>
-                                    <li class="notice_date user_info_title content_text_align title_bold">
-                                        <span>작성 날짜</span>
-                                    </li>
-                                </ul>
+                        <div class="visit_chart">
+                            <canvas id="myChart" width="400px" height="100px"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart_flex">
+                        <div class="chart_flex_div">
+                            <div class="visit_title">
+                                신청자/참여자 비율
                             </div>
-                            <div class="notice_info_one_important">
-                                <ul class="notice_info">
-                                    <li class="notice_number_important user_info_title content_text_align">
-                                        <span>중요</span>
-                                    </li>
-                                    <li class="notice_title user_info_title content_text_align_left">
-                                        <span>제목제목제목제목제목제목</span>
-                                    </li>
-                                    <li class="notice_writer user_info_title board_title">
-                                        <span>작성자</span>
-                                    </li>
-                                    <li class="notice_date user_info_title content_text_align">
-                                        <span>작성 날짜</span>
-                                    </li>
-                                </ul>
+                            <div class="parti_chart">
+                                <canvas id="myDoughnutChart" width="80%" height="80%"></canvas>
                             </div>
-                            <div class="notice_info_one_important">
-                                <ul class="notice_info">
-                                    <li class="notice_number_important user_info_title content_text_align">
-                                        <span>중요</span>
-                                    </li>
-                                    <li class="notice_title user_info_title content_text_align_left">
-                                        <span>제목제목제목제목제목제목</span>
-                                    </li>
-                                    <li class="notice_writer user_info_title board_title">
-                                        <span>작성자</span>
-                                    </li>
-                                    <li class="notice_date user_info_title content_text_align">
-                                        <span>작성 날짜</span>
-                                    </li>
-                                </ul>
+                        </div>
+                        <div class="chart_flex_div">
+                            <div class="visit_title">
+                                신규 가입자
                             </div>
-                            <div class="notice_info_one">
-                                <ul class="notice_info">
-                                    <li class="notice_number user_info_title content_text_align">
-                                        <span>번호</span>
-                                    </li>
-                                    <li class="notice_title user_info_title content_text_align_left">
-                                        <span>제목제목제목제목제목제목</span>
-                                    </li>
-                                    <li class="notice_writer user_info_title board_title">
-                                        <span>작성자</span>
-                                    </li>
-                                    <li class="notice_date user_info_title content_text_align">
-                                        <span>작성 날짜</span>
-                                    </li>
-                                </ul>
+                            <div>
+
                             </div>
                         </div>
                     </div>
+                    <div class="chart_flex">
+                        <div class="chart_flex_div">
+                            <div class="visit_title">
+                                포인트 사용 내역
+                            </div>
+                            <div class="use_point">
+                                <ul class="use_point_list">
+                                    <li class="use_point_name">이름</li>
+                                    <li class="use_point_place">사용처</li>
+                                    <li class="use_point_minus">포인트 차감</li>
+                                    <li class="use_point_date">날짜</li>
+                                </ul>
+                            </div>
+                            <div class="use_point">
+                                <ul class="use_point_list">
+                                    <li class="use_point_name">감자</li>
+                                    <li class="use_point_place">강원도 시장</li>
+                                    <li class="use_point_minus">2000 P</li>
+                                    <li class="use_point_date">22-10-24</li>
+                                </ul>
+                            </div>
+                            <div class="use_point">
+                                <ul class="use_point_list">
+                                    <li class="use_point_name">감자</li>
+                                    <li class="use_point_place">강원도 시장</li>
+                                    <li class="use_point_minus">2000 P</li>
+                                    <li class="use_point_date">22-10-24</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chart_flex_div">
+                            <div class="visit_title">
+                            </div>
+                        </div>
+                    </div>
+                  
                 </div>
             </div>
         </div>
@@ -168,4 +162,7 @@
     </div>
 </body>
 <script src="/src/admin/js_admin/admin_page_main.js"></script>
+<script src="/src/admin/js_admin/visit_statis.js"></script>
+<script src="/src/admin/js_admin/parti_chart.js"></script>
+
 </html>
