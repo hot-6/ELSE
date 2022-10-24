@@ -8,92 +8,162 @@
     margin: 0 auto;
     margin-top: 70px;
     width: 95%;
-    display: flex;
-    justify-content: space-around;
 }
 
-.service_box {
-    width: 45%;
-    border: 1px solid red;
+.user_search {
+    width: 100%;
+    height: 80px;
     background-color: white;
+    /* border: 1px solid red; */
 }
 
-.service_head {
-    text-align: center;
+.user_list {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 800px;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.total_user {
+    position: relative;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 12px;
+    padding-left: 20px;
+    padding-top: 10px;
+    height: 50px;
+    /* border: 1px solid slateblue; */
 }
 
-.service_qna {
-    border: 1px solid blue;
-    max-height: 800px;
-}
-
-.service_qna_title {
-    display: inline-block;
-    font-size: 20px;
-    padding-left: 12px;
-    padding-top: 5px;
-}
-
-.service_qna_one {
+.notice_info {
+    width: 100%;
     height: 40px;
+    display: flex;
 }
 
-.service_qna_one_div {
+.user_info_wrapper {
+    /* border: 1px solid salmon; */
     position: relative;
 }
 
-.service_qna_one_div img {
+.check {
+    width: 70px;
+    padding-left: 24px;
+}
+
+.checkbox {
     position: absolute;
-    top: 7px;
-    right: 20px;
+    top: 9px;
+    left: 36px;
 }
 
-/* ======================= */
-.qna_answer {
-    display: none;
+input[id="total_check"] {
+    /* position: relative; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 6px;
+    left: 4px;
 }
 
-.qna_answer.active {
-    display: block;
-    /* border: 1px solid hotpink; */
-}
-
-.user_qna{
+.user_info_title{
+    padding-top: 9px;
     font-size: 16px;
-    display: inline-block;
+    margin-right: 20px;
+    width: 120px;
 }
 
-.qna_answer textarea {
-    width: 90%;
+
+.user_info_top_div {
+    width: 100%;
+    height: 40px;
+}
+
+.user_list_info {
+    /* border: 1px solid seagreen; */
+    width: 100%;
+    max-height: 700px;
+}
+
+.user_info_wrapper :last-child {
+    padding-bottom: 8px;
+}
+
+.user_list_box {
+    position: relative;
+}
+
+.one_check {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 28px;
+    left: -10px;
+}
+
+.user_content {
+    width: 100%;
     height: 50px;
+    /* border: 1px solid skyblue; */
 }
 
-/* qna 내용 수정 ========================================================== */
+.user_one_info {
+    padding-top: 24px;
+}
 
-.service_qna_box {
-    width: 45%;
-    border: 1px solid red;
+
+/* search======================================================================== */
+.user_search {
+    position: relative;
+    height: 60px;
+}
+
+.user_search > div {
+    margin-left: 150px;
+}
+
+.user_search  img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 18px;
+    left: 105px;
+}
+
+.search_text {
+    font-size: 20px;
     background-color: white;
-}
-
-.qna_search_div {
-    margin-left: 12px;
-}
-
-.qna_search {
-    display: inline-block;
-    margin-left: 20px;
+    border: none;
     width: 80%;
-    height: 50px;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: 16px;
 }
 
-.btn_qna_search {
-    display: inline-block;
-    width: 12%;
-    height: 50px;
+.search_text:focus {
+    outline: none;
+}
+
+.board_title {
+    /* border: 1px solid black; */
+    width: 500px;
+    text-align: center;
+}
+
+.content_text_align {
+    text-align: center;
+    /* border: 1px solid black; */
+    width: 150px;
+}
+
+.title_bold {
+    font-weight: 700;
+}
+
+.btn_delete {
+    position: absolute;
+    top: 12px;
+    right: 22px;
 }
 
 
@@ -108,4 +178,107 @@
 
 
 
+/* ==================================== */
 
+.notice_number {
+    width: 10%;
+}
+
+.notice_title {
+    width: 60%;
+}
+
+.notice_writer {
+    width: 10%;
+}
+
+.notice_date {
+    width: 20%;
+}
+
+.notice_info_one {
+    width: 100%;
+}
+
+.user_info_wrapper {
+    max-height: 440px;
+}
+
+.user_info_top_div {
+    border-bottom: 1px solid lightgray;
+}
+
+.content_text_align_left {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.notice_number_important {
+    width: 10%;
+}
+
+.btn_write {
+    position: absolute;
+    top: 12px;
+    right: 22px;
+}
+
+
+.notice_info_one {
+    /* border: 1px solid blue; */
+    position: relative;
+    height: 48px;
+    line-height: 30px;
+}
+
+.button_plus_qna {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+}
+
+.qna_answer_div {
+    width: 100%;
+    /* border: 1px solid hotpink; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    margin-top: 10px;
+    float: right;
+}
+
+.content_none {
+    width: 15%;
+}
+
+.qna_detail {
+    width: 40%;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.qna_answer {
+    position: relative;
+    width: 40%;
+    margin-top: 9px;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.answer_text {
+    width: 90%;
+    height: 150px;
+    overflow: scroll;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.btn_answer {
+    position: absolute;
+    bottom: 18px;
+    right: 12px;
+}

@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="/admin/css_admin/admin_page_main.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="/admin/css_admin/admin_page_same.css">
-    <title>관리자 페이지 메인</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>       
+<title>관리자 페이지 메인</title>
 </head>
 <body>
     <div id="base">
@@ -35,13 +39,15 @@
                         <div class="box_box_top">
                             <div class="box box_top">
                                 <div class="box_title">방문자 현황</div>
-                                <div></div>
+                                <div class="visit_chart">
+                                    <canvas id="myChart" width="400px" height="100px"></canvas>
+                                </div>
                             </div>
                             <div class="box box_top">
                                 <div class="box_title">일자별 요약</div>
                                 <div class="daily_summary">
-                                    <div>
-                                        <table class="dail_summary_table">
+                                    <div class="daily_table">
+                                        <table class="daily_summary_table">
                                             <thead>
                                                 <tr>
                                                     <th class="daily_summary_table_head daily_summary_table_head_first">일자</th>
@@ -65,19 +71,19 @@
                                             <tfoot>
                                                 <tr>
                                                     <td class="text_left">최근 7일 합계</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
+                                                    <td class="text_right">진로</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="text_left">이번 달 합계</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
-                                                    <td class="text_right">햄버거</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
+                                                    <td class="text_right">연고</td>
                                                 </tr>
                                             </tfoot>
                                         </table>
@@ -85,6 +91,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div></div>
                         <div class="box_box_bottom">
                             <div class="box box_bottom">
                                 <div class="box_title">최신 게시글</div>
@@ -172,7 +179,7 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="" alt="로고 이미지"></a></div>
+            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="">ELSE</a></div>
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/admin/img_admin/home.png">
@@ -213,8 +220,8 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="manage_list_img" src="/admin/img_admin/list-check.png"></div>
-                            <span>댓글 관리</span>
+                            <div><img class="statis_list_img" src="/admin/img_admin/statistic.png"></div>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
@@ -235,4 +242,5 @@
     </div>
 </body>
 <script src="/admin/js_admin/admin_page_main.js"></script>
+<script src="/admin/js_admin/visit_statis.js"></script>
 </html>

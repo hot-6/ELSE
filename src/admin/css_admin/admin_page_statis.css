@@ -35,14 +35,13 @@
     /* border: 1px solid slateblue; */
 }
 
-.user_info {
+.notice_info {
     width: 100%;
     display: flex;
 }
 
 .user_info_wrapper {
     /* border: 1px solid salmon; */
-    padding-left: 50px;
     position: relative;
 }
 
@@ -164,4 +163,82 @@ input[id="total_check"] {
     position: absolute;
     top: 12px;
     right: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================== */
+.visit_statis {
+    width: 100%;
+    /* border: 1px solid blue; */
+    background-color: white;
+}
+
+.visit_title {
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid lightgray;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 50px;
+}
+
+.visit_chart {
+    width: 100%;
+    background-color: white;
+}
+
+.chart_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.chart_flex_div {
+    background-color: white;
+    width: 48%;
+    text-align: center;
+}
+
+
+.parti_chart > canvas {
+    margin: 0 auto;
+}
+
+.use_point {
+    width: 100%;
+}
+
+.use_point_list {
+    display: flex;
+    /* border: 1px solid black; */
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.use_point_name {
+    width: 10%;
+}
+
+.use_point_place {
+    width: 30%;
+}
+
+.use_point_minus {
+    width: 20%;
+}
+
+.use_point_date {
+    width: 30%;
 }

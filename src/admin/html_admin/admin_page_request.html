@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/admin/css_admin/admin_page_request.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="/admin/css_admin/admin_page_same.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -40,8 +43,8 @@
                                                     <input type="button" value="승인">
                                                     <input type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding">신청 글 제목</span>
-                                                <span class="request_user">신청자</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
@@ -50,8 +53,8 @@
                                                     <input type="button" value="승인">
                                                     <input type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding">신청 글 제목</span>
-                                                <span class="request_user">신청자</span>
+                                                <span class="request_title title_padding title_list_text">신청 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                     </ul>
@@ -74,8 +77,8 @@
                                                     <input type="button" value="승인">
                                                     <input type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding">참여 글 제목</span>
-                                                <span class="request_user">신청자</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                         <div class="request_list_one">
@@ -84,8 +87,8 @@
                                                     <input type="button" value="승인">
                                                     <input type="button" value="거절">
                                                 </span>
-                                                <span class="request_title title_padding">참여 글 제목</span>
-                                                <span class="request_user">신청자</span>
+                                                <span class="request_title title_padding title_list_text">참여 글 제목</span>
+                                                <span class="request_user title_list_text">신청자</span>
                                             </li>
                                         </div>
                                     </ul>
@@ -100,9 +103,10 @@
                         <ul class="request_list">
                             <div class="request_list_one reject_head">
                                 <li class="request_flex">
-                                    <span class="content_none title_bold">카테고리</span>
+                                    <span class="content_none title_bold reject_font_size">카테고리</span>
                                     <span class="request_title title_padding title_bold">글 제목</span>
-                                    <span class="reject_reason">
+                                    <span class="reject_reason title_bold reject_font_size">
+                                        거절 사유
                                     </span>
                                     <span class="button_reason" >
                                         <input class="display_none" type="button" value="보내기"> 
@@ -112,11 +116,10 @@
                             <div class="request_list_one">
                                 <li class="request_flex">
                                     <span class="content_none">신청</span>
-                                    <span class="request_title title_padding">글 제목</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> 부적절
-                                        <input type="radio" value="22"> 부적절
-                                        <input type="radio" value="33"> 부적절
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input type="radio" value="22"> 설명부족
                                         <input type="radio" value="33"> 부적절
                                     </span>
                                     <span class="button_reason">
@@ -127,11 +130,10 @@
                             <div class="request_list_one">
                                 <li class="request_flex">
                                     <span class="content_none">참여</span>
-                                    <span class="request_title title_padding">글 제목</span>
+                                    <span class="request_title title_padding title_list_text">글 제목</span>
                                     <span class="reject_reason">
-                                        <input type="radio" value="11"> 부적절
-                                        <input type="radio" value="22"> 부적절
-                                        <input type="radio" value="33"> 부적절
+                                        <input type="radio" value="11"> 사진첨부
+                                        <input type="radio" value="22"> 설명부족
                                         <input type="radio" value="33"> 부적절
                                     </span>
                                     <span class="button_reason">
@@ -149,7 +151,7 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="" alt="로고 이미지"></a></div>
+            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="">ELSE</a></div>
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/admin/img_admin/home.png">
@@ -190,8 +192,8 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="manage_list_img" src="/admin/img_admin/list-check.png"></div>
-                            <span>댓글 관리</span>
+                            <div><img class="statis_list_img" src="/admin/img_admin/statistic.png"></div>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
