@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/admin/css_admin/admin_page_service.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_service.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
-    <link rel="stylesheet" href="/admin/css_admin/admin_page_same.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <title></title>
 </head>
 <body>
@@ -22,76 +25,99 @@
             </header>
             <div class="content">
                 <div class="content_wrapper">
-                    <div class="service_box">
-                        <div class="service_head">문의 내용</div>
-                        <div class="service_qna">
-                            <ul class="service_qna_list">
-                                <div>
-                                    <li class="service_qna_one">
-                                        <div class="service_qna_one_div">
-                                            <div class="service_qna_title">asdasdasd</div>
-                                            <img class="button_plus_qna" src="/admin/img_admin/menu-dots-vertical.png">
-                                        </div>
-                                    </li>
-                                    <div class="qna_answer">
-                                        <img src="/admin/img_admin/arrow-small-right.png">
-                                        <div class="user_qna">질문 내용</div>
-                                        <textarea placeholder="답변"></textarea>
-                                        <input type="button" value="답변하기">
+                    <div class="qna_wrapper">
+                        <div class="user_list">
+                            <div class="total_user">문의 사항
+                            </div>
+                            <div class="user_info_wrapper">
+                                <div class="user_info_top_div">
+                                    <ul class="notice_info">
+                                        <li class="notice_number user_info_title content_text_align title_bold">
+                                            <span>번호</span>
+                                        </li>
+                                        <li class="notice_title user_info_title content_text_align title_bold">
+                                            <span>제목</span>
+                                        </li>
+                                        <li class="notice_writer user_info_title board_title title_bold">
+                                            <span>작성자</span>
+                                        </li>
+                                        <li class="notice_date user_info_title content_text_align title_bold">
+                                            <span>작성 날짜</span>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="notice_info_one">
+                                    <div>
+                                        <ul class="notice_info">
+                                            <li class="notice_number_important user_info_title content_text_align">
+                                                <span>3</span>
+                                            </li>
+                                            <li class="notice_title user_info_title content_text_align_left">
+                                                <span>제목제목제목제목제목제목</span>
+                                            </li>
+                                            <li class="notice_writer user_info_title board_title">
+                                                <span>작성자</span>
+                                            </li>
+                                            <li class="notice_date user_info_title content_text_align">
+                                                <span>작성 날짜</span>
+                                            </li>
+                                            <img class="button_plus_qna" src="/src/admin/img_admin/menu-dots-vertical.png">
+                                        </ul>
                                     </div>
                                 </div>
-                                
-                                <div>
-                                    <li class="service_qna_one">
-                                        <div class="service_qna_one_div">
-                                            <div class="service_qna_title">asdasdasd</div>
-                                            <img class="button_plus_qna" src="/admin/img_admin/menu-dots-vertical.png">
-                                        </div>
-                                    </li>
-                                    <div class="qna_answer">
-                                        <img src="/admin/img_admin/arrow-small-right.png">
-                                        <div class="user_qna">질문 내용</div>
-                                        <textarea placeholder="답변"></textarea>
-                                        <input type="button" value="답변하기">
+                                <div class="notice_info_one">
+                                    <div>
+                                        <ul class="notice_info">
+                                            <li class="notice_number_important user_info_title content_text_align">
+                                                <span>2</span>
+                                            </li>
+                                            <li class="notice_title user_info_title content_text_align_left">
+                                                <span>제목제목제목제목제목제목</span>
+                                            </li>
+                                            <li class="notice_writer user_info_title board_title">
+                                                <span>작성자</span>
+                                            </li>
+                                            <li class="notice_date user_info_title content_text_align">
+                                                <span>작성 날짜</span>
+                                            </li>
+                                            <img class="button_plus_qna" src="/src/admin/img_admin/menu-dots-vertical.png">
+                                        </ul>
+                                        
                                     </div>
                                 </div>
-                                <div>
-                                    <li class="service_qna_one">
-                                        <div class="service_qna_one_div">
-                                            <div class="service_qna_title">asdasdasd</div>
-                                            <img class="button_plus_qna" src="/admin/img_admin/menu-dots-vertical.png">
+                                <div class="notice_info_one">
+                                    <div class="qna_div">
+                                        <ul class="notice_info">
+                                            <li class="notice_number user_info_title content_text_align">
+                                                <span>1</span>
+                                            </li>
+                                            <li class="notice_title user_info_title content_text_align_left">
+                                                <span>제목제목제목제목제목제목</span>
+                                            </li>
+                                            <li class="notice_writer user_info_title board_title">
+                                                <span>작성자</span>
+                                            </li>
+                                            <li class="notice_date user_info_title content_text_align">
+                                                <span>작성 날짜</span>
+                                            </li>
+                                            <img class="button_plus_qna" src="/src/admin/img_admin/menu-dots-vertical.png">
+                                        </ul>
+                                        <div class="qna_answer_div">
+                                            <div class="content_none"></div>
+                                            <div class="qna_detail">
+                                                문의글 상세내용
+                                                <br>
+                                                문의글 상세내용
+                                            </div>
+                                            <div class="qna_answer">
+                                                <textarea name="" id="" class="answer_text"></textarea>
+                                                <input class="btn_answer" type="button" value="답변하기">
+                                            </div>
                                         </div>
-                                    </li>
-                                    <div class="qna_answer">
-                                        <img src="/admin/img_admin/arrow-small-right.png">
-                                        <div class="user_qna">질문 내용</div>
-                                        <textarea placeholder="답변"></textarea>
-                                        <input type="button" value="답변하기">
                                     </div>
                                 </div>
-                                <div>
-                                    <li class="service_qna_one">
-                                        <div class="service_qna_one_div">
-                                            <div class="service_qna_title">asdasdasd</div>
-                                            <img class="button_plus_qna" src="/admin/img_admin/menu-dots-vertical.png">
-                                        </div>
-                                    </li>
-                                    <div class="qna_answer">
-                                        <img src="/admin/img_admin/arrow-small-right.png">
-                                        <div class="user_qna">질문 내용</div>
-                                        <textarea placeholder="답변"></textarea>
-                                        <input type="button" value="답변하기">
-                                    </div>
-                                </div>
-                            </ul>
-                        </div>
-                                
-                    </div>
-                    <div class="service_qna_box">
-                        <div class="service_head">QnA 내용 수정</div>
-                        <div class="qna_search_div">
-                            <input class="qna_search" type="text" placeholder="검색어 입력">
-                            <input class="btn_qna_search" type="button" value="검색">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,10 +129,10 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/admin/html_admin/admin_page_main.html"><img src="" alt="로고 이미지"></a></div>
+            <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><img src="">ELSE</a></div>
             <div class="menu_admin">
                 <div><a href="#">
-                    <img src="/admin/img_admin/home.png">
+                    <img src="/src/admin/img_admin/home.png">
                     <div>사이트 바로가기</div>
                 </a></div>
             </div>
@@ -114,21 +140,21 @@
                 <ul class="manage_list">
                     <li class="list_li">
                         <a href="admin_page_request.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/browser.png"></div>
+                            <div><img class="manage_list_img" src="/src/admin/img_admin/browser.png"></div>
                             <span>요청 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a href="admin_page_user.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/user.png"></div>
+                            <div><img class="manage_list_img" src="/src/admin/img_admin/user.png"></div>
                             <span>이용자 관리</span>
                         </a>
                     </li>
                     <li class="list_li">
                         <a class="arrow_down_menu" href="javascript:void(0);">
-                                <div><img class="manage_list_img" src="/admin/img_admin/ballot.png"></div>
+                                <div><img class="manage_list_img" src="/src/admin/img_admin/ballot.png"></div>
                                 <span>게시글 관리</span>
-                                <img class="arrow_down" src="/admin/img_admin/angle-down1.png">
+                                <img class="arrow_down" src="/src/admin/img_admin/angle-down1.png">
                                 <ul class="toggle_menu">
                                     <li><a href="admin_page_board.html">
                                         <div>품앗이 게시판</div>
@@ -144,19 +170,19 @@
                     </li>
                     <li class="list_li">
                         <a href="#">
-                            <div><img class="manage_list_img" src="/admin/img_admin/list-check.png"></div>
-                            <span>댓글 관리</span>
+                            <div><img class="statis_list_img" src="/src/admin/img_admin/statistic.png"></div>
+                            <span>통계</span>
                         </a>
                     </li>
                     <li class="list_li">
-                        <a href="/admin/html_admin/admin_page_service.html">
-                            <div><img class="manage_list_img" src="/admin/img_admin/comments.png"></div>
+                        <a href="/src/admin/html_admin/admin_page_service.html">
+                            <div><img class="manage_list_img" src="/src/admin/img_admin/comments.png"></div>
                             <span>고객 센터</span>
                         </a>
                     </li>
                     <li class="list_li list_admin_notice">
                         <a href="">
-                            <div><img class="manage_list_img" src="/admin/img_admin/exclamation.png"></div>
+                            <div><img class="manage_list_img" src="/src/admin/img_admin/exclamation.png"></div>
                             <span>관리자 공지</span>
                         </a>
                     </li>
@@ -165,6 +191,6 @@
         </div>
     </div>
 </body>
-<script src="/admin/js_admin/admin_page_main.js"></script>
-<script src="/admin/js_admin/admin_page_service.js"></script>
+<script src="/src/admin/js_admin/admin_page_main.js"></script>
+<script src="/src/admin/js_admin/admin_page_service.js"></script>
 </html>
