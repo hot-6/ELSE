@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/src/admin/css_admin/admin_page_statis.css">
+    <link rel="stylesheet" href="/src/admin/css_admin/admin_page_statis.css">
     <link href="/website/css/uicons-outline-rounded.css" rel="stylesheet">
     <link rel="stylesheet" href="/src/admin/css_admin/admin_page_same.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,70 +26,173 @@
             </header>
             <div class="content">
                 <div class="content_wrapper">
-                    <div>
-                        <div class="visit_statis">
-                            <div class="visit_title">
-                                일자별 방문자 통계
-                            </div>
-                        </div>
-                        <div class="visit_chart">
-                            <canvas id="myChart" width="400px" height="100px"></canvas>
-                        </div>
-                    </div>
                     <div class="chart_flex">
-                        <div class="chart_flex_div">
+                        <div class="daily_summary">
                             <div class="visit_title">
-                                신청자/참여자 비율
+                                일자별 요약
                             </div>
-                            <div class="parti_chart">
-                                <canvas id="myDoughnutChart" width="80%" height="80%"></canvas>
-                            </div>
-                        </div>
-                        <div class="chart_flex_div">
-                            <div class="visit_title">
-                                신규 가입자
-                            </div>
-                            <div>
-
+                            <div class="daily_summary_list_div">
+                                <div class="card_head">
+                                    <div class="form_group">
+                                        <select class="choose_year" name="year" id="analyticsYear">
+                                            <option value="2022" selected>2022년</option>
+                                        </select>
+                                    </div>
+                                    <div class="form_group">
+                                        <select class="choose_month" name="month" id="analyticsMonth">
+                                            <option value="1">1월</option>
+                                            <option value="2">2월</option>
+                                            <option value="3">3월</option>
+                                            <option value="4">4월</option>
+                                            <option value="5">5월</option>
+                                            <option value="6">6월</option>
+                                            <option value="7">7월</option>
+                                            <option value="8">8월</option>
+                                            <option value="9">9월</option>
+                                            <option value="10" selected>10월</option>
+                                            <option value="11">11월</option>
+                                            <option value="12">12월</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="card_body">
+                                    <div class="table_responsive">
+                                        <table class="summary_table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text_center">일자</th>
+                                                    <th class="text_center">방문자</th>
+                                                    <th class="text_center">가입</th>
+                                                    <th class="text_center">문의</th>
+                                                    <th class="text_center">신청</th>
+                                                    <th class="text_center">참여</th>
+                                                    <th class="text_center">새 게시글</th>
+                                                    <th class="text_right">포인트 사용</th>
+                                                    <th class="text_right point_padding">포인트 지급</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr class="today">
+                                                    <td class="text_center">2022-10-25 (화)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-24 (월)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-23 (일)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-22 (토)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-21 (금)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-20 (목)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text_center">2022-10-19 (수)</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td class="text_center">10월 합계</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0명</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_center">0</td>
+                                                    <td class="text_right">0 P</td>
+                                                    <td class="text_right point_padding">0 P</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="chart_flex">
-                        <div class="chart_flex_div">
-                            <div class="visit_title">
-                                포인트 사용 내역
+                    <div class="chart_flex_bottom">
+                        <div class="chart_flex">
+                            <div class="chart_flex_div">
+                                <div class="visit_title">
+                                    일자별 방문자
+                                </div>
+                                <div class="chart_box">
+                                    <div class="visit_chart">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="use_point">
-                                <ul class="use_point_list">
-                                    <li class="use_point_name">이름</li>
-                                    <li class="use_point_place">사용처</li>
-                                    <li class="use_point_minus">포인트 차감</li>
-                                    <li class="use_point_date">날짜</li>
-                                </ul>
-                            </div>
-                            <div class="use_point">
-                                <ul class="use_point_list">
-                                    <li class="use_point_name">감자</li>
-                                    <li class="use_point_place">강원도 시장</li>
-                                    <li class="use_point_minus">2000 P</li>
-                                    <li class="use_point_date">22-10-24</li>
-                                </ul>
-                            </div>
-                            <div class="use_point">
-                                <ul class="use_point_list">
-                                    <li class="use_point_name">감자</li>
-                                    <li class="use_point_place">강원도 시장</li>
-                                    <li class="use_point_minus">2000 P</li>
-                                    <li class="use_point_date">22-10-24</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="chart_flex_div">
-                            <div class="visit_title">
+                            <div class="chart_flex_div">
+                                <div class="visit_title">
+                                    연령별 이용자
+                                </div>
+                                <div class="chart_box">
+                                    <div class="visit_chart">
+                                        <canvas id="myAgeChart"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                  
                 </div>
             </div>
         </div>
@@ -99,7 +202,7 @@
 
 
         <div class="menu">
-            <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><img src="">ELSE</a></div>
+            <div class="logo_img"><a href="/src/admin/html_admin/admin_page_main.html"><div>ELSE</div></a></div>
             <div class="menu_admin">
                 <div><a href="#">
                     <img src="/src/admin/img_admin/home.png">
@@ -164,5 +267,6 @@
 <script src="/src/admin/js_admin/admin_page_main.js"></script>
 <script src="/src/admin/js_admin/visit_statis.js"></script>
 <script src="/src/admin/js_admin/parti_chart.js"></script>
+<script src="/src/admin/js_admin/age_chart.js"></script>
 
 </html>

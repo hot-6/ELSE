@@ -7,6 +7,7 @@
 .content_wrapper {
     margin: 0 auto;
     margin-top: 70px;
+    height: 650px;
     width: 95%;
 }
 
@@ -20,7 +21,8 @@
 .user_list {
     margin-top: 20px;
     width: 100%;
-    max-height: 800px;
+    height: 100%;
+    /* max-height: 800px; */
     background-color: white;
     /* border: 1px solid red; */
 }
@@ -221,10 +223,42 @@ input[id="total_check"] {
     position: absolute;
     top: 12px;
     right: 22px;
+    width: 100px;
+    height: 30px;
+    border: none;
 }
 
+.page_number {
+    margin: 0 auto;
+    /* border: 1px solid slateblue; */
+    margin: 15px;
+}
 
+.page_number_li {
+    font-size: 16px;
+    height: 30px;
+    /* padding: 5px; */
+    margin-right: 8px;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+    border: 1px solid black;
+}
 
+.page_number_next_li {
+    font-size: 16px;
+    height: 30px;
+    /* padding: 5px; */
+    margin-right: 8px;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid black;
+}
 
+.page_number_div {
+    width: 500px;
+    margin: 0 auto;
+}
 
 

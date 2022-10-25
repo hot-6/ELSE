@@ -18,7 +18,6 @@ body {
     font-size: 13px;
     background: #eee;
     background-size: 100% 100%;
-    color: #212121;
     line-height: 1.42857143;
 }
 
@@ -79,7 +78,7 @@ ul {
     width: 200px;
     height: 100%;
     position: fixed;
-    background-color: #87F194;
+    background-color: #353535;
     font-size: 20px;
 }
 
@@ -190,4 +189,9 @@ ul {
     font-family: 'Nanum Pen Script', cursive;
     font-size: 40px;
     text-align: center;
+    color: white;
+}
+
+.menu div, .menu span {
+    color: white;
 }
