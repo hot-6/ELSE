@@ -64,7 +64,7 @@
         word-break: break-all;
     }
     
-    .Shortcut_noticeboard_list>li:first-child {
+    /* .Shortcut_noticeboard_list>li:first-child {
         background-color: #f2f5ff;
         border-top-left-radius: 38.5px;
         border-bottom-left-radius: 38.5px;
@@ -79,7 +79,7 @@
         border-top-right-radius: 38.5px;
         border-bottom-right-radius: 38.5px;
         background-color: #f2fbf5;
-    }
+    } */
     
     .Shortcut_noticeboard_list>li {
         display: -ms-flexbox;
@@ -113,7 +113,7 @@
         position: relative;
         max-width: 1060px;
         background-color: white;
-        padding-top: 0px;
+        padding-top: 80px;
         
     }
     
@@ -123,11 +123,17 @@
     }
     
     .board_exchange_labor_title>h2{
-        text-align: center;
+        display: inline;
         font-size: 22px;
         font-weight: 700;
         line-height: 1.05;
         color: #111;
+        margin-right: 50px;
+        
+    }
+
+    .board_exchange_labor_title>h2:nth-child(3){
+        text-decoration: underline;
     }
     
     .board_headerBtn{

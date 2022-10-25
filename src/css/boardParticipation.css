@@ -160,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     color: #333;
     font-weight: 400;
     word-wrap: break-word;
-    white-space: pre-wrap;
+    white-space: break-space;
 }
 .partContent_divider{
     margin: 0;
