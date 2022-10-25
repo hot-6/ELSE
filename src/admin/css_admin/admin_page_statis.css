@@ -198,6 +198,12 @@ input[id="total_check"] {
     background-color: white;
 }
 
+.chart_box {
+    /* border: 1px solid blue; */
+    width: 90%;
+    margin: 0 auto;
+}
+
 .chart_flex {
     display: flex;
     justify-content: space-between;
@@ -242,3 +248,96 @@ input[id="total_check"] {
 .use_point_date {
     width: 30%;
 }
+
+.daily_summary {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.card_head {
+    padding: 0 24px;
+    position: relative;
+    line-height: 50px;
+    min-height: 50px;
+    vertical-align: middle;
+    display: flex;
+}
+
+.choose_year {
+    display: inline-block;
+    margin-right: 10px;
+    width: 120px;
+    border-bottom-color: rgba(12, 12, 12, 0.12);
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+}
+
+.choose_month {
+    display: inline-block;
+    margin-right: 10px;
+    width: 120px;
+    border-bottom-color: rgba(12, 12, 12, 0.12);
+    height: 29px;
+    line-height: 29px;
+    font-size: 14px;
+}
+
+.card_body {
+    border-top: 1px solid #eee;
+    position: relative;
+}
+
+.table_responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.summary_table {
+    border-collapse: separate;
+    width: 100%;
+    max-width: 100%;
+    background-color: transparent;
+    /* margin-bottom: 10px; */
+}
+
+.text_center {
+    padding-left: 24px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 8px;
+    text-align: center;
+}
+
+.text_right {
+    padding-left: 24px;
+    vertical-align: middle;
+    font-size: 13px;
+    padding: 8px;
+    text-align: right;
+}
+
+.point_padding {
+    padding-right: 20px;
+}
+
+.chart_flex_bottom {
+    /* border: 1px solid salmon; */
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

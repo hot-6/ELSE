@@ -7,8 +7,10 @@
 .content_wrapper {
     margin: 0 auto;
     margin-top: 70px;
+    height: 750px;
     width: 95%;
 }
+
 
 .user_search {
     width: 100%;
@@ -20,7 +22,8 @@
 .user_list {
     margin-top: 20px;
     width: 100%;
-    max-height: 800px;
+    height: 100%;
+    /* max-height: 800px; */
     background-color: white;
     /* border: 1px solid red; */
 }
@@ -37,7 +40,6 @@
 
 .notice_info {
     width: 100%;
-    height: 40px;
     display: flex;
 }
 
@@ -69,7 +71,7 @@ input[id="total_check"] {
 .user_info_title{
     padding-top: 9px;
     font-size: 16px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
     width: 120px;
 }
 
@@ -185,7 +187,7 @@ input[id="total_check"] {
 }
 
 .notice_title {
-    width: 60%;
+    width: 40%;
 }
 
 .notice_writer {
@@ -193,11 +195,46 @@ input[id="total_check"] {
 }
 
 .notice_date {
-    width: 20%;
+    width: 15%;
+}
+
+.btn_qna_answer {
+    width: 10%;
+}
+
+.answer_yesno {
+    width: 10%;
+    /* border: 1px solid blue; */
+}
+
+.answer_no_div {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    background-color: #F5AA0F;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.answer_yes_div {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    background-color: #3B4AFF;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
 }
 
 .notice_info_one {
+    position: relative;
     width: 100%;
+    height: 40px;
 }
 
 .user_info_wrapper {
@@ -210,7 +247,7 @@ input[id="total_check"] {
 
 .content_text_align_left {
     text-align: left;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .notice_number_important {
@@ -221,64 +258,42 @@ input[id="total_check"] {
     position: absolute;
     top: 12px;
     right: 22px;
+    width: 100px;
+    height: 30px;
+    border: none;
 }
 
-
-.notice_info_one {
-    /* border: 1px solid blue; */
-    position: relative;
-    height: 48px;
-    line-height: 30px;
+.page_number {
+    margin: 0 auto;
+    /* border: 1px solid slateblue; */
+    margin: 15px;
 }
 
-.button_plus_qna {
-    position: absolute;
-    top: 6px;
-    right: 10px;
-}
-
-.qna_answer_div {
-    width: 100%;
-    /* border: 1px solid hotpink; */
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
-    margin-top: 10px;
-    float: right;
-}
-
-.content_none {
-    width: 15%;
-}
-
-.qna_detail {
-    width: 40%;
-    margin-top: 10px;
+.page_number_li {
     font-size: 16px;
-    border: 1px solid lightgray;
-    padding-left: 10px;
-    padding-top: 15px;
+    height: 30px;
+    /* padding: 5px; */
+    margin-right: 8px;
+    text-align: center;
+    width: 30px;
+    display: inline-block;
+    border: 1px solid black;
 }
 
-.qna_answer {
-    position: relative;
-    width: 40%;
-    margin-top: 9px;
-    border: 1px solid lightgray;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.answer_text {
-    width: 90%;
-    height: 150px;
-    overflow: scroll;
+.page_number_next_li {
     font-size: 16px;
-    margin-top: 5px;
+    height: 30px;
+    /* padding: 5px; */
+    margin-right: 8px;
+    text-align: center;
+    width: 50px;
+    display: inline-block;
+    border: 1px solid black;
 }
 
-.btn_answer {
-    position: absolute;
-    bottom: 18px;
-    right: 12px;
+.page_number_div {
+    width: 500px;
+    margin: 0 auto;
 }
+
+
