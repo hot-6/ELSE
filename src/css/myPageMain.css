@@ -30,6 +30,9 @@
     border-bottom-right-radius : 0px;
     border-bottom-left-radius : 0px;
 }
+.option_tool{
+    background-color: black;
+}
 
 .supportList{
     border-left-width:1px;
@@ -75,9 +78,20 @@
 .profile{
     margin-top: 1%;
     height: 80%;
-    width: 60%;
+    width: 75%;
     margin-left: 3%; 
-    background-color: white; 
     float:left;
-    border-style: groove;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e3dede;
+    text-align: left;
+    border-top-left-radius : 7px;
+    border-top-right-radius : 7px;
+    border-bottom-right-radius : 7px;
+    border-bottom-left-radius : 7px;
+}
+
+.option_list{
+    list-style: none;
+    text-align: left;
 }
