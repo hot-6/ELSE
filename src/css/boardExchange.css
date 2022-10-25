@@ -63,8 +63,11 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     letter-spacing: normal;
     word-break: break-all;
 }
+body{
+    background-color: white;
+}
 
-.Shortcut_noticeboard_list>li:first-child {
+/* .Shortcut_noticeboard_list>li:first-child {
     background-color: #f2f5ff;
     border-top-left-radius: 38.5px;
     border-bottom-left-radius: 38.5px;
@@ -79,7 +82,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
     border-top-right-radius: 38.5px;
     border-bottom-right-radius: 38.5px;
     background-color: #f2fbf5;
-}
+} */
 
 .Shortcut_noticeboard_list>li {
     display: -ms-flexbox;
@@ -113,21 +116,29 @@ body{
     position: relative;
     max-width: 1060px;
     background-color: white;
-    padding-top: 0px;
+    padding-top: 80px;
     
 }
 
 .board_exchange_labor_title{
-    position: relative;
-    margin-bottom: 30px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000;
 }
 
 .board_exchange_labor_title>h2{
-    text-align: center;
+    display: inline;
     font-size: 22px;
     font-weight: 700;
     line-height: 1.05;
     color: #111;
+    margin-right: 50px;
+    
+}
+.board_exchange_labor_title>h2:nth-child(1){
+    text-decoration: underline;
 }
 
 .board_headerBtn{

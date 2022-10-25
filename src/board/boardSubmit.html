@@ -52,7 +52,7 @@
 
 
   </head>
-  <body>
+  <body style="background-color: white;">
        <!--header 적용 시작-->
        <div id="__next">
         <div class="NavBar_container">
@@ -161,23 +161,30 @@
                     <div class="submitDetail_photo">
                       <div class="submitDetail_photo_header">메인 간단글</div>
                       <p class="submitDetail_photo_guide">게시판 메인 화면에 보이는 간단한 업무 공지글입니다!
-                      <br>
-                      <br>
+                   
                       글 제목, 업무 강도, 요청 지역, 업무 시간을 작성해주세요.</p>
+                      
+
                       <div class="submitDetail_photo_body">
                         <form class="submitDetail_form">
-
-                          글 제목: <input type="text" name="글 제목"/ class="submitDetail_inputA" id="inputab"><br>
+                          <label for="name" class="submit_label">글 제목</label>
+                          <input type="text" name="글 제목"/ class="submitDetail_inputA" id="inputab"><br>
+                          <div class="pont">
+                          업무 강도 : 상      
+                            <input type="radio" name="강도" value="상" >
+                          중      
+                          <input type="radio" name="강도" value="중" >
+                          하      
+                          <input type="radio" name="강도" value="하" >
+                          <br>
+                          <br>
+                          </div>
+                       
+                          <label for="pusharea" class="submit_label">요청 지역</label>
+                          <input type="text" name="요청지역"/ class="submitDetail_inputA" id="inputab"><br>
                       
-
-                      
-                          업무 강도:상  <input type="radio" name="강도" value="상" >
-                      
-                               중  <input type="radio" name="강도" value="중">
-                               하  <input type="radio" name="강도" value="하"><br>
-
-                               요청 지역 : <input type="text" name="요청 지역"class="submitDetail_inputA"><br>
-                               업무 시간 : <input type="text" name="업무 시간" class="submitDetail_inputA">
+                          <label for="worktime" class="submit_label">업무 시간</label>
+                          <input type="text" name="업무 시간"/ class="submitDetail_inputA" id="inputab"><br>
                       
                           </form>
                           <button type="button" class="submitDetail_photoBtnA">완료</button>
