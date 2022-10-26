@@ -106,7 +106,36 @@
       <div class="main_padding main_padding_logout"></div>
       <main class="main_paddingTop"> 
           <div id="banner_container" style="margin-bottom: -30px;">
-            <img src="../img/banner4.jpg" id="banner">
+            <div class="banner">
+              <ul>
+                <li>
+                  <img
+                   
+                    src="../img/banner6.png"
+                  />
+                </li>
+                <li>
+                  <img
+                  src="../img/banner2.jpg"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../img/banner3.jpg"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="../img/banner4.jpg"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.pixabay.com/photo/2015/07/31/15/01/guitar-869217__340.jpg"
+                  />
+                </li>
+              </ul>
+            </div>
         </div>  
         <section class="main_section main__Section_b">
           <div class="section_wrapper">
@@ -655,4 +684,30 @@
       </div>
     </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script language="JavaScript">
+    $(document).ready(function () {
+      //사용할 배너
+      var $banner = $(".banner").find("ul");
+      var $bannerWidth = $banner.children().outerWidth(); 
+      var $bannerHeight = $banner.children().outerHeight(); 
+      var $bannerLength = $banner.children().length; 
+      var rollingId;
+
+      rollingId = setInterval(function () {
+        rollingStart();
+      }, 4000); 
+
+      function rollingStart() {
+        $banner.css("width", $bannerWidth * $bannerLength + "px");
+        $banner.css("height", $bannerHeight + "px");
+        $banner.animate({ left: -$bannerWidth + "px" }, 1500, function () {
+          $(this).append("<li>" + $(this).find("li:first").html() + "</li>");
+          $(this).find("li:first").remove();
+          $(this).css("left", 0);
+        });
+      }
+    });
+  </script>
 </html>
