@@ -24,14 +24,18 @@
 
     <!-- footer css (나중에 파일 분리)-->
     <link href="css/footer.css  " rel="stylesheet">
-   
-    <!-- 메인 상황봐서 제거 가능-->
-    <link
-      rel="stylesheet"
-      href="//static.wanted.co.kr/vendor/bootstrap.min.css"
-      media="screen"
-    />
   </head>
+
+  <!--
+    ******************************************************************
+        매인 페이지 작업 시 id, class, css 모르는 부분은 바로 문의
+
+        퍼블 : 황영택(2022-10-21)
+
+        백 : 미정
+    ******************************************************************
+  -->
+
   <body>
     <!--header (나중에 제거)-->
     <div id="__next">
@@ -40,6 +44,7 @@
               <nav class="MainBar_flex">
                   <div class="MainBar_logoBox">
                       <div>
+                        <!-- 좌측 상단 햄버거 이미지-->
                           <button type="button" class="MainBar_hamberger">
                               <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="hamberger menu" style="width:17px;height:14px;object-fit:contain">
                           </button>
@@ -53,7 +58,7 @@
                       <li class="">
                           <a href="/" class="">홈</a>
                       </li>
-                      <!--selectNav는 나중에 적용-->
+                      <!--selectNav는 나중에 적용(클릭했을 때 파란줄)-->
                       <li class="selectedNav">
                           <a href="" class="">품앗이 게시판</a>
                       </li>
@@ -111,12 +116,12 @@
                 <h2 class="title_header">품앗이 게시판 진행중</h2>        
               </div>
             </div>
-            <div class="main__Category__gLSom">
+            <div class="main__Category">
           
-            <ul class="main__v2pDV">
+            <ul class="main_display">
               <li class="main_content_list">
                 <a href="#">
-                  <div class="main_content__Thumbnail__vziSn">
+                  <div class="main_content__Thumbnail">
                     <img src="../img/hot6.jpg" alt="LINE X Wanted Session 5-2" />
                   </div>
                   <p class="main_content_text">
@@ -139,7 +144,7 @@
                 <a
                   href="#"
                   ><div
-                    class="main_content__Thumbnail__vziSn"
+                    class="main_content__Thumbnail"
                   >
                     <img
                       src="https://www.ddazua.com/pluginfile.php/161289/local_courselist/thumbnailimg/2802/01_%ED%94%84%EB%A1%9C.png"
@@ -164,7 +169,7 @@
               </li>
               <li class="main_content_list">
                 <a href="">
-                  <div class="main_content__Thumbnail__vziSn">
+                  <div class="main_content__Thumbnail">
                     <img
                       src="https://www.ddazua.com/pluginfile.php/154057/local_courselist/thumbnailimg/2572/02_%ED%94%84%EB%A1%9C.png"
                       alt=""
@@ -190,7 +195,7 @@
                 <a
                   href=""
                   ><div
-                    class="main_content__Thumbnail__vziSn"
+                    class="main_content__Thumbnail"
                   >
                     <img
                       src="https://www.ddazua.com/pluginfile.php/132318/local_courselist/thumbnailimg/2147/04_%ED%94%84%EB%A1%9C.png"
@@ -269,12 +274,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/vol.jpg"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -300,12 +305,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/vol2.jpg"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -331,12 +336,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/vol3.jpg"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -362,12 +367,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/vol4.jpg"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -434,12 +439,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/loading2.gif"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -460,12 +465,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/loading2.gif"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -488,12 +493,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/loading2.gif"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
@@ -514,12 +519,12 @@
                     >
                       <div>
                         <li class="articleCard_a articleBanner__card">
-                          <a href="#" class="ArticleCard__link__jfTtp">
-                            <div class="Thumbnail__eSifF undefined">
+                          <a href="#" class="ArticleCard__link">
+                            <div class="Thumbnail_card undefined">
                               <img
                                 src="../img/loading2.gif"
                                 alt=""
-                                class="Thumbnail__image__NlEX0 undefined"
+                                class="Thumbnail_img undefined"
                               />
                             </div>
                             <div class="undefined">
