@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>신청내역</title>
+    <title>취소신청</title>
     <link rel="stylesheet" href="..\css\myPage.css" crossorigin="anonymous"/>
 
         <!--header 관련 css-->
@@ -89,116 +89,115 @@
 
 
         <br><Br><Br><br>
-    <div class="mypage_background">
-        <h1 style="margin-left: 15%;">ELSE</h1>
-        <!-- 개인정보 페이지 -->
-        <div class="mypage" id="mpDIV">
-            <!-- 왼쪽 개인정보 구성화면 -->
-            <div class="userInfo" style="width: 17%; line-height: 2; margin-left: 14.5%; background-color: white; float: left;" id="mpDIV">
-                <!-- 유저 프로필 사진 -->
-                <div class="userProfile" id="mpDIV">
-                    <img src="../img/pinggu.jpeg" class="userProfile" style="margin-bottom:10%;">
-                    <div class="userProfile_Upload" id="mpDIV">
+          <div class="mypage_background">
+            <h1 class="else">ELSE</h1>
+            <!-- 개인정보 페이지 -->
+            <div class="mypage" id="mpDIV">
+                <!-- 왼쪽 개인정보 구성화면 -->
+                <div class="userInfo" id="mpDIV">
+                    <!-- 유저 프로필 사진 -->
+                    <div class="userProfile" id="mpDIV">
+                        <img src="../img/pinggu.jpeg" class="userProfile">
+                        <div class="userProfile_Upload" id="mpDIV">
+                        </div>
                     </div>
-                </div>
-                <!-- 유저 개인정보 -->
-                <div style="margin-bottom: 5%;" id="mpDIV">
-                      <div class="userName" id="mpDIV">
-                          <h1>홍길동</h1>
-                          <p style="font-size: 20px;">hongGD@gmail.com</p> 
-                      </div>
-                      
-                      <div class="userPhoneNumber" id="mpDIV">
-                          <p style="font-size: 20px;">010-1234-5678</p> 
-                      </div>
-                      
-                          <h3 style="display: inline-flex">관심태그 : </h3>
-                          <p style="display: inline-flex"> 과일, 나눔, 체험</p>
-                      
-                </div>
+                    <!-- 유저 개인정보 -->
+                    <div class="userProfile_info" id="mpDIV">
+                          <div class="userName" id="mpDIV">
+                              <h1>홍길동</h1>
+                              <p class="fontsize25px">hongGD@gmail.com</p> 
+                          </div>
+                          
+                          <div class="userPhoneNumber" id="mpDIV">
+                              <p class="fontsize25px">010-1234-5678</p> 
+                          </div>
+                          
+                              <h3 class="inline_flex">관심태그 : </h3>
+                              <p class="inline_flex"> 과일, 나눔, 체험</p>
+                          
+                    </div>
                       
                       <!-- <hr class="userinfo_hr" style="border-color:#e3dede; border:3px 0 0 0"> -->
                       
                       <div class="point" style="text-align: left;">
-                          <p style="display: inline-flex; font-size: 25px;  margin-left: 10%;" id="bold">포인트 : </p>
-                          <p style="display: inline-flex; font-size: 25px;" id="bold"> 10,000 P</p>
+                        <p class="point_str" id="bold">포인트 : </p>
+                        <p class="point_num" id="bold"> 10,000 P</p>
+                    </div>
+                    
+                    <div class="point">
+                      <div class="list" id="left" id="mpDIV">
+                        <p class="fontsize25px">신청내역</p>
                       </div>
-                      
-                      <div class="point">
-                        <div class="list" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">신청내역</p>
-                        </div>
-                        <div class="likeList" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">관심목록</p>
-                        </div>
-                        <div class="undo" id="left" id="mpDIV">
-                          <p style="font-size: 25px;">신청취소</p>
-                        </div>
+                      <div class="likeList" id="left" id="mpDIV">
+                        <p class="fontsize25px">관심목록</p>
                       </div>
-                      <div class="point">
-                        <div class="userOption" id="left" id="mpDIV"> 
-                          <p style="font-size: 25px;">계정설정</p>
-                        </div>
+                      <div class="undo" id="left" id="mpDIV">
+                        <p class="fontsize25px">신청취소</p>
                       </div>
-                      <div id="mpDIV"></div>
-            </div>
+                    </div>
+                    <div class="point">
+                      <div class="userOption" id="left" id="mpDIV"> 
+                        <p class="fontsize25px">계정설정</p>
+                      </div>
+                    </div>
+                    <div id="mpDIV"></div>
+          </div>
           <!-- 위쪽 지원현황 -->
-                  <div class="listTool" id="mpDIV">
-                      <h1 style="text-align: left; font-size: 20px; margin-left: 5%;">지원현황</h1>
-                      <div id="mpDIV">
-                          <div style="float: left; width: 24%;" id="mpDIV">
-                            <h1> 0</h1>
-                              <p style="font-size: 20px;"> 지원완료 </p>
-                          </div>
-                          <div class="supportList" style="float: left; width: 24%;">
-                            <h1>0</h1>
-                              <p style="font-size: 20px;"> 지원서 열람 </p> 
-                          </div>
-                          <div class="supportList" style="float: left; width: 24%;">
-                            <h1>2</h1>
-                              <p style="font-size: 20px;"> 참여이력 </p> 
-                          </div>
-                          <div class="supportList" style="float: left; width: 24%;">
-                            <h1>3</h1>
-                              <p style="font-size: 20px;"> 스크랩 </p> 
-                          </div>
-                      </div>
-                      <div></div>
-                      <div class="report">
-                      </div>
-                  </div>
+          <div class="listTool" id="mpDIV">
+            <h1 class="support_list_main">지원현황</h1>
+            <div id="mpDIV">
+                <div class="supportList">
+                  <h1> 0</h1>
+                    <p class="fontsize20px"> 지원완료 </p>
+                </div>
+                <div class="supportList">
+                  <h1>0</h1>
+                    <p class="fontsize20px"> 지원서 열람 </p> 
+                </div>
+                <div class="supportList">
+                  <h1>2</h1>
+                    <p class="fontsize20px"> 참여이력 </p> 
+                </div>
+                <div class="supportList">
+                  <h1>3</h1>
+                    <p class="fontsize20px"> 스크랩 </p> 
+                </div>
+            </div>
+            <div></div>
+            <div class="report">
+            </div>
+        </div>
                   <!-- 중앙에 들어갈 내용 -->
                     <div class="profile" id="mpDIV">
-                        <div style="margin-top: 5%; margin-bottom: 5%;"id="mpDIV">
-                        </div>
-                        <h3 style="text-align: left; margin-left: 3%; font-size: 25px;">홍길동님의 신청내역</h3>
+                        <h3 class="top_string">홍길동님의 신청내역</h3>
+
                         <div class="list_div">
-                        <div style="margin-left: 3%; margin-right: 3%;float: left;" id="mpDIV">
+                          <div class="mypage_maintool" id="mpDIV">
                             <img src="../img\포도.jpg" style="width: 300px; height: 200px;">
                         </div>
-                        <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
+                        <div class="avis_title" id="mpDIV">
                             <h2>포도 및 샤인머스켓 포장</h2>
                             <div>
-                            <p style="text-align: left; font-size: 15px;">장소 : 경기도 안산시 대부북동
+                            <p class="avis_body">장소 : 경기도 안산시 대부북동
                                 <br> 날짜 : 20xx년 xx월 xx일
                                 <br> 업무시간 : 13시 ~ 17시
                                 <br> 업무강도 : 하
                                 <br> 업무내용 : 하우스에서 수확한 포도와 샤인머스켓을
                                 <br> 종이포장지로 포장한 후 포장박스에 담기</p>
                           </div>
-                          <div style="text-align: right; margin-right: 10%; margin-bottom: 3%;" id="mpDIV">
+                          <div class="undo_button" id="mpDIV">
                             <button>신청 취소</button>
                             </div>
                         </div>
                       </div>
                       <div class="list_div">
-                        <div style="margin-left: 3%;margin-right: 3%; float: left; height: 30%;" id="mpDIV">
+                        <div class="mypage_maintool"id="mpDIV">
                             <img src="../img\blank.png" style="width: 300px; height: 160px;">
                         </div>
-                        <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
+                        <div class="avis_title" id="mpDIV">
                             <h2>새롭게 추가될 영역입니다.</h2>
-                            <div style="margin-left: 3%;">
-                            <p style="text-align: left; font-size: 20px;">장소 : -
+                            <div>
+                            <p class="avis_body">장소 : -
                             <br> 날짜 : -
                             <br> 업무시간 : -
                             <br> 업무강도 : -
@@ -208,13 +207,13 @@
                         </div>
                       </div>
                       <div class="list_div">
-                        <div style="margin-left: 3%;margin-right: 3%; float: left; height: 30%;" id="mpDIV">
+                        <div class="mypage_maintool" id="mpDIV">
                             <img src="../img\blank.png" style="width: 300px; height: 160px;">
                         </div>
-                        <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
+                        <div class="avis_title" id="mpDIV">
                             <h2>새롭게 추가될 영역입니다.</h2>
-                            <div style="margin-left: 3%;">
-                            <p style="text-align: left; font-size: 20px;">장소 : -
+                            <div>
+                            <p class="avis_body">장소 : -
                             <br> 날짜 : -
                             <br> 업무시간 : -
                             <br> 업무강도 : -
@@ -224,13 +223,13 @@
                         </div>
                       </div>
                       <div class="list_div">
-                        <div style="margin-left: 3%;margin-right: 3%; float: left; height: 30%;" id="mpDIV">
+                        <div class="mypage_maintool" id="mpDIV">
                             <img src="../img\blank.png" style="width: 300px; height: 160px;">
                         </div>
-                        <div style="margin-bottom: 2%; height: 30%;" id="mpDIV">
+                        <div class="avis_title" id="mpDIV">
                             <h2>새롭게 추가될 영역입니다.</h2>
-                            <div style="margin-left: 3%;">
-                            <p style="text-align: left; font-size: 20px;">장소 : -
+                            <div>
+                            <p class="avis_body">장소 : -
                             <br> 날짜 : -
                             <br> 업무시간 : -
                             <br> 업무강도 : -
